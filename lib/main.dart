@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "PAS Model",
+      title: "PAS Semester 1 Flutter",
       initialRoute: Routes.login,
       getPages: Routes.myPages,
     );

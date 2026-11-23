@@ -28,7 +28,7 @@ class MainMenu extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
-            label: 'Profile',
+            label: 'Feat',
           ),
         ],        
       ),
