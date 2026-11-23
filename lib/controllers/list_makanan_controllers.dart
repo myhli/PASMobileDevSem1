@@ -11,23 +11,26 @@ class ListMakananController extends GetxController {
       gambar: 'assets/Unnnniiiiiiiii.jpeg',
     ),
     MakananModel(
-      nama: 'Mie Ayam Bakso',
-      harga: 20000,
-      deskripsi: 'Mie kenyal dengan topping ayam kecap, sawi hijau, dan 2 butir bakso sapi.',
+      nama: 'Ayam Bakar Madu',
+      harga: 30000,
+      deskripsi: 'Ayam bakar olesan madu murni lengkap dengan sambal terasi dan lalapan.',
       gambar: 'assets/Unnnniiiiiiiii.jpeg',
     ),
+
     MakananModel(
       nama: 'Sate Ayam Madura',
       harga: 28000,
       deskripsi: '10 tusuk sate ayam daging pilihan dengan siraman bumbu kacang kental.',
       gambar: 'assets/Unnnniiiiiiiii.jpeg',
     ),
+    
     MakananModel(
-      nama: 'Ayam Bakar Madu',
-      harga: 30000,
-      deskripsi: 'Ayam bakar olesan madu murni lengkap dengan sambal terasi dan lalapan.',
+      nama: 'Mie Ayam Bakso',
+      harga: 20000,
+      deskripsi: 'Mie kenyal dengan topping ayam kecap, sawi hijau, dan 2 butir bakso sapi.',
       gambar: 'assets/Unnnniiiiiiiii.jpeg',
     ),
+    
     MakananModel(
       nama: 'Es Teh Jumbo Manis',
       harga: 8000,

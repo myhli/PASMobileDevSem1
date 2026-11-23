@@ -9,29 +9,31 @@ class MainMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Obx(() => Scaffold(
-      body: IndexedStack(
-        index: controller.selectedIndex.value,
-        children: controller.listPage,
+    return Obx(
+      () => Scaffold(
+        body: IndexedStack(
+          index: controller.selectedIndex.value,
+          children: controller.listPage,
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: controller.selectedIndex.value,
+          onTap: controller.changePage,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_outlined),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.history_outlined),
+              label: 'Profile',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person_outline),
+              label: 'Feat',
+            ),
+          ],
+        ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: controller.selectedIndex.value,
-        onTap: controller.changePage,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.history_outlined),
-            label: 'History',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_outline),
-            label: 'Feat',
-          ),
-        ],        
-      ),
-    ));
+    );
   }
 }
